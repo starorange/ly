@@ -1,0 +1,329 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>个人介绍</title>
+<style type="text/css">
+body,td,th {
+	font-family: "微软雅黑";
+}
+.STYLE1 {
+	font-size: 24px;
+	color: #FF6699;
+}
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-image: url();
+}
+img
+{
+opacity:1.0;
+filter:alpha(opacity=100); /* For IE8 and earlier */
+}
+img:hover
+{
+	opacity: 0.5;
+	filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+.STYLE2 {font-size: 24px}
+
+
+
+#Layer3 {
+	position:absolute;
+	left:54px;
+	top:1055px;
+	width:53px;
+	height:54px;
+	z-index:1;
+}
+</style>
+<script type="text/JavaScript">
+<!--
+function MM_timelinePlay(tmLnName, myID) { //v1.2
+  //Copyright 1998, 1999, 2000, 2001, 2002, 2003, 2004 Macromedia, Inc. All rights reserved.
+  var i,j,tmLn,props,keyFrm,sprite,numKeyFr,firstKeyFr,propNum,theObj,firstTime=false;
+  if (document.MM_Time == null) MM_initTimelines(); //if *very* 1st time
+  tmLn = document.MM_Time[tmLnName];
+  if (myID == null) { myID = ++tmLn.ID; firstTime=true;}//if new call, incr ID
+  if (myID == tmLn.ID) { //if Im newest
+    setTimeout('MM_timelinePlay("'+tmLnName+'",'+myID+')',tmLn.delay);
+    fNew = ++tmLn.curFrame;
+    for (i=0; i<tmLn.length; i++) {
+      sprite = tmLn[i];
+      if (sprite.charAt(0) == 's') {
+        if (sprite.obj) {
+          numKeyFr = sprite.keyFrames.length; firstKeyFr = sprite.keyFrames[0];
+          if (fNew >= firstKeyFr && fNew <= sprite.keyFrames[numKeyFr-1]) {//in range
+            keyFrm=1;
+            for (j=0; j<sprite.values.length; j++) {
+              props = sprite.values[j]; 
+              if (numKeyFr != props.length) {
+                if (props.prop2 == null) sprite.obj[props.prop] = props[fNew-firstKeyFr];
+                else        sprite.obj[props.prop2][props.prop] = props[fNew-firstKeyFr];
+              } else {
+                while (keyFrm<numKeyFr && fNew>=sprite.keyFrames[keyFrm]) keyFrm++;
+                if (firstTime || fNew==sprite.keyFrames[keyFrm-1]) {
+                  if (props.prop2 == null) sprite.obj[props.prop] = props[keyFrm-1];
+                  else        sprite.obj[props.prop2][props.prop] = props[keyFrm-1];
+        } } } } }
+      } else if (sprite.charAt(0)=='b' && fNew == sprite.frame) eval(sprite.value);
+      if (fNew > tmLn.lastFrame) tmLn.ID = 0;
+  } }
+}
+
+function MM_timelineGoto(tmLnName, fNew, numGotos) { //v2.0
+  //Copyright 1998, 1999, 2000, 2001, 2002, 2003, 2004 Macromedia, Inc. All rights reserved.
+  var i,j,tmLn,props,keyFrm,sprite,numKeyFr,firstKeyFr,lastKeyFr,propNum,theObj;
+  if (document.MM_Time == null) MM_initTimelines(); //if *very* 1st time
+  tmLn = document.MM_Time[tmLnName];
+  if (numGotos != null)
+    if (tmLn.gotoCount == null) tmLn.gotoCount = 1;
+    else if (tmLn.gotoCount++ >= numGotos) {tmLn.gotoCount=0; return}
+  jmpFwd = (fNew > tmLn.curFrame);
+  for (i = 0; i < tmLn.length; i++) {
+    sprite = (jmpFwd)? tmLn[i] : tmLn[(tmLn.length-1)-i]; //count bkwds if jumping back
+    if (sprite.charAt(0) == "s") {
+      numKeyFr = sprite.keyFrames.length;
+      firstKeyFr = sprite.keyFrames[0];
+      lastKeyFr = sprite.keyFrames[numKeyFr - 1];
+      if ((jmpFwd && fNew<firstKeyFr) || (!jmpFwd && lastKeyFr<fNew)) continue; //skip if untouchd
+      for (keyFrm=1; keyFrm<numKeyFr && fNew>=sprite.keyFrames[keyFrm]; keyFrm++);
+      for (j=0; j<sprite.values.length; j++) {
+        props = sprite.values[j];
+        if (numKeyFr == props.length) propNum = keyFrm-1 //keyframes only
+        else propNum = Math.min(Math.max(0,fNew-firstKeyFr),props.length-1); //or keep in legal range
+        if (sprite.obj != null) {
+          if (props.prop2 == null) sprite.obj[props.prop] = props[propNum];
+          else        sprite.obj[props.prop2][props.prop] = props[propNum];
+      } }
+    } else if (sprite.charAt(0)=='b' && fNew == sprite.frame) eval(sprite.value);
+  }
+  tmLn.curFrame = fNew;
+  if (tmLn.ID == 0) eval('MM_timelinePlay(tmLnName)');
+}
+
+function MM_initTimelines() { //v4.0
+    //MM_initTimelines() Copyright 1997 Macromedia, Inc. All rights reserved.
+    var ns = navigator.appName == "Netscape";
+    var ns4 = (ns && parseInt(navigator.appVersion) == 4);
+    var ns5 = (ns && parseInt(navigator.appVersion) > 4);
+    var macIE5 = (navigator.platform ? (navigator.platform == "MacPPC") : false) && (navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4);
+    document.MM_Time = new Array(1);
+    document.MM_Time[0] = new Array(2);
+    document.MM_Time["Timeline1"] = document.MM_Time[0];
+    document.MM_Time[0].MM_Name = "Timeline1";
+    document.MM_Time[0].fps = 15;
+    document.MM_Time[0][0] = new String("sprite");
+    document.MM_Time[0][0].slot = 1;
+    if (ns4)
+        document.MM_Time[0][0].obj = document["Layer3"];
+    else if (ns5)
+        document.MM_Time[0][0].obj = document.getElementById("Layer3");
+    else
+        document.MM_Time[0][0].obj = document.all ? document.all["Layer3"] : null;
+    document.MM_Time[0][0].keyFrames = new Array(2, 80);
+    document.MM_Time[0][0].values = new Array(2);
+    if (ns5 || macIE5)
+        document.MM_Time[0][0].values[0] = new Array("25px", "27px", "29px", "31px", "33px", "35px", "37px", "39px", "41px", "43px", "45px", "47px", "49px", "51px", "52px", "54px", "56px", "58px", "60px", "62px", "64px", "66px", "68px", "70px", "72px", "74px", "76px", "78px", "80px", "82px", "84px", "86px", "88px", "90px", "92px", "94px", "96px", "98px", "100px", "102px", "103px", "105px", "107px", "109px", "111px", "113px", "115px", "117px", "119px", "121px", "123px", "125px", "127px", "129px", "131px", "133px", "135px", "137px", "139px", "141px", "143px", "145px", "147px", "149px", "151px", "153px", "154px", "156px", "158px", "160px", "162px", "164px", "166px", "168px", "170px", "172px", "174px", "176px", "178px");
+    else
+        document.MM_Time[0][0].values[0] = new Array(25,27,29,31,33,35,37,39,41,43,45,47,49,51,52,54,56,58,60,62,64,66,68,70,72,74,76,78,80,82,84,86,88,90,92,94,96,98,100,102,103,105,107,109,111,113,115,117,119,121,123,125,127,129,131,133,135,137,139,141,143,145,147,149,151,153,154,156,158,160,162,164,166,168,170,172,174,176,178);
+    document.MM_Time[0][0].values[0].prop = "left";
+    if (ns5 || macIE5)
+        document.MM_Time[0][0].values[1] = new Array("1078px", "1077px", "1077px", "1076px", "1075px", "1074px", "1074px", "1073px", "1072px", "1072px", "1071px", "1070px", "1069px", "1069px", "1068px", "1067px", "1067px", "1066px", "1065px", "1064px", "1064px", "1063px", "1062px", "1061px", "1061px", "1060px", "1059px", "1059px", "1058px", "1057px", "1056px", "1056px", "1055px", "1054px", "1054px", "1053px", "1052px", "1051px", "1051px", "1050px", "1049px", "1049px", "1048px", "1047px", "1046px", "1046px", "1045px", "1044px", "1044px", "1043px", "1042px", "1041px", "1041px", "1040px", "1039px", "1039px", "1038px", "1037px", "1036px", "1036px", "1035px", "1034px", "1033px", "1033px", "1032px", "1031px", "1031px", "1030px", "1029px", "1028px", "1028px", "1027px", "1026px", "1026px", "1025px", "1024px", "1023px", "1023px", "1022px");
+    else
+        document.MM_Time[0][0].values[1] = new Array(1078,1077,1077,1076,1075,1074,1074,1073,1072,1072,1071,1070,1069,1069,1068,1067,1067,1066,1065,1064,1064,1063,1062,1061,1061,1060,1059,1059,1058,1057,1056,1056,1055,1054,1054,1053,1052,1051,1051,1050,1049,1049,1048,1047,1046,1046,1045,1044,1044,1043,1042,1041,1041,1040,1039,1039,1038,1037,1036,1036,1035,1034,1033,1033,1032,1031,1031,1030,1029,1028,1028,1027,1026,1026,1025,1024,1023,1023,1022);
+    document.MM_Time[0][0].values[1].prop = "top";
+    if (!ns4) {
+        document.MM_Time[0][0].values[0].prop2 = "style";
+        document.MM_Time[0][0].values[1].prop2 = "style";
+    }
+    document.MM_Time[0][1] = new String("behavior");
+    document.MM_Time[0][1].frame = 81;
+    document.MM_Time[0][1].value = "MM_timelineGoto('Timeline1','1')";
+    document.MM_Time[0].lastFrame = 81;
+    for (i=0; i<document.MM_Time.length; i++) {
+        document.MM_Time[i].ID = null;
+        document.MM_Time[i].curFrame = 0;
+        document.MM_Time[i].delay = 1000/document.MM_Time[i].fps;
+    }
+}
+//-->
+</script>
+</head>
+
+<body onload="MM_timelinePlay('Timeline1')">
+<div id="Layer3" style="left: 25px; top: 1078px;"><a href="鲸鱼.html"><img src="img/cd.jpg" width="50" height="50" border="0" /></a></div>
+<table width="100" border="0" align="center" cellpadding="0" cellspacing="0" background="img/98558PICJRx_1024.jpg">
+  <tr>
+    <td colspan="19" ><img src="img/banner.jpg" width="850" height="189"></td>
+    <td width="20%" rowspan="15" bgcolor="#4ABC96"><div><img src="img/001.gif" alt="" width="207" height="160" /></div>
+    
+      <p><strong><center>张宇翔</center></strong></p>
+      <p>Living without an aim is like sailing without a compass.--John Ruskin</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+    <p>&nbsp;</p></td>
+  </tr>
+  <tr>
+    <td width="2%">&nbsp;</td>
+    <td colspan="18"><p class="STYLE2">个人简介：</p></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td colspan="18" rowspan="3">&nbsp;<span class="STYLE1">大家好！</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td colspan="18">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我叫张宇翔，来自河南省洛阳市，现在就读位于河南省省会的郑州黄河科技学院。</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td colspan="18"><hr /></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td colspan="18">个人爱好：</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td colspan="18" rowspan="8"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td colspan="2" rowspan="2"><img src="img/pic03.jpg" width="367" height="188" /></td>
+        <td width="46%">&nbsp;</td>
+        <td width="9%">&nbsp;</td>
+        <td width="1%">&nbsp;</td>
+        <td width="1%">&nbsp;</td>
+        <td width="1%">&nbsp;</td>
+        <td width="1%">&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;爱好摄影，喜欢拍摄风景照片。</td>
+        <td><p><a href="相册.html"><img src="img/photohome.png" width="73" height="73" /></a></p>
+          <p> &nbsp;&nbsp;&nbsp;相册</p></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="5%">&nbsp;</td>
+        <td width="36%">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="2" rowspan="2"><img src="img/pic02.jpg" width="367" height="188" /></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;&nbsp;&nbsp;爱好旅游，喜欢在假期的时候到处转转。</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="2" rowspan="2"><img src="img/20111125184306_hEKrd.jpg" width="367" height="188" /></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;&nbsp;爱好阅读，喜欢在闲暇时光看一些书籍。</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="21">&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td bgcolor="#4ABC96">&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td colspan="18">&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td colspan="18">&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td colspan="18">&nbsp;</td>
+    <td><a href="index.html"><img src="img/back.png" width="71" height="69" border="0" /></a>返回主页</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td colspan="18">&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td colspan="18" bgcolor="#4ABC96">&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td colspan="18" bgcolor="#4ABC96"><center>张宇翔版权所有&copy;2015</center></td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>
